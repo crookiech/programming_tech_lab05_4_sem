@@ -1,6 +1,5 @@
 #ifndef RATEYOURMINDPALWINDOW_H
 #define RATEYOURMINDPALWINDOW_H
-
 #include <QDialog>
 #include "CreateTagGame.h"
 #include "TagGame.h"
@@ -26,7 +25,7 @@ private:
     Ui::RateYourMindPalWindow *ui;
     CreateTagGame* rateFactory;
     TagGame* rateGame;
-
+    QVector<QPushButton*> buttons;
 };
 
 #endif

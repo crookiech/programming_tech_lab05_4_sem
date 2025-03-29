@@ -26,6 +26,7 @@ private:
     Ui::ClassicTagGameWindow *ui;
     CreateTagGame* classicFactory;
     TagGame* classicGame;
+    QVector<QPushButton*> buttons;
 };
 
 #endif
