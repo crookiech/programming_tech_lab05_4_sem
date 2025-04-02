@@ -1,4 +1,5 @@
-QT       += core gui
+QT += core gui
+QT += testlib
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,7 +18,9 @@ SOURCES += \
     CreateTagGame.cpp \
     ILogger.cpp \
     CreateLogger.cpp \
-    main.cpp
+    main.cpp \
+    ScreenSaverTests.cpp \
+    MenuTests.cpp
 
 HEADERS += \
     ClassicTagGameWindow.h \

@@ -17,10 +17,13 @@ public:
 
 private slots:
     // void on_pushButton_tagGame_clicked();
-
     void on_lineEdit_editingFinished();
+
+public slots:
+    bool isValidGameName(QString gameName);
 
 private:
     Ui::ScreenSaver *ui;
 };
+
 #endif

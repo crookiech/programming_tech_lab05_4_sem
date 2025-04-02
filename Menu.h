@@ -18,8 +18,11 @@ public:
 private slots:
     void on_pushButton_2_clicked();
     // void on_pushButton_clicked();
-
     void on_lineEdit_editingFinished();
+
+public slots:
+    bool isValidClassicName(QString gameName);
+    bool isValidRateName(QString gameName);
 
 private:
     Ui::Menu *ui;

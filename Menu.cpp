@@ -1,9 +1,10 @@
 #include "Menu.h"
-#include "ScreenSaver.h"
+#include "MenuTests.cpp"
 #include "ui_Menu.h"
 #include "ClassicTagGameWindow.h"
 #include "RateYourMindPalWindow.h"
 #include <QMessageBox>
+#include <iostream>
 
 Menu::Menu(QWidget *parent) :
     QDialog(parent),
@@ -44,18 +45,39 @@ void Menu::on_pushButton_clicked()
 }
 */
 
+bool Menu::isValidClassicName(QString gameName) {
+    return gameName == "классические пятнашки";
+}
+
+bool Menu::isValidRateName(QString gameName) {
+    return gameName == "rate your mind pal";
+}
 
 void Menu::on_lineEdit_editingFinished()
 {
+    std::cout << "menu_test_correct_text..." << std::flush;
+    menu_test_correct_text();
+    std::cout << "OK" << std::endl;
+
+    std::cout << "menu_test_upper_text..." << std::flush;
+    menu_test_upper_text();
+    std::cout << "OK" << std::endl;
+
+    std::cout << "menu_test_spaces_text..." << std::flush;
+    menu_test_spaces_text();
+    std::cout << "OK" << std::endl;
+
+    std::cout << "menu_test_hell_text..." << std::flush;
+    menu_test_hell_text();
+    std::cout << "OK" << std::endl;
+
     QString text = ui->lineEdit->text().trimmed();
-    QString classic = "классические пятнашки";
-    QString rate = "rate your mind pal";
-    if (text == classic) {
+    if (isValidClassicName(text)) {
         hide();
         ClassicTagGameWindow window;
         window.setModal(true);
         window.exec();
-    } else if (text == rate) {
+    } else if (isValidRateName(text)) {
         hide();
         RateYourMindPalWindow window;
         window.setModal(true);
