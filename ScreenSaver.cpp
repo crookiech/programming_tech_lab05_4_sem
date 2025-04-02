@@ -29,6 +29,8 @@ void ScreenSaver::on_pushButton_tagGame_clicked()
 */
 
 bool ScreenSaver::isValidGameName(QString gameName) {
+    gameName = gameName.toLower();
+    gameName = gameName.replace(" ", "");
     return gameName == "пятнашки";
 }
 

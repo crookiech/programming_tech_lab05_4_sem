@@ -46,11 +46,15 @@ void Menu::on_pushButton_clicked()
 */
 
 bool Menu::isValidClassicName(QString gameName) {
-    return gameName == "классические пятнашки";
+    gameName = gameName.toLower();
+    gameName = gameName.replace(" ", "");
+    return gameName == "классическиепятнашки";
 }
 
 bool Menu::isValidRateName(QString gameName) {
-    return gameName == "rate your mind pal";
+    gameName = gameName.toLower();
+    gameName = gameName.replace(" ", "");
+    return gameName == "rateyourmindpal";
 }
 
 void Menu::on_lineEdit_editingFinished()

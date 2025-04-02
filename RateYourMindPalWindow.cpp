@@ -53,6 +53,7 @@ RateYourMindPalWindow::~RateYourMindPalWindow()
 
 void RateYourMindPalWindow::on_pushButton_shuffle_clicked()
 {
+    rateGame->Shuffle();
     QVector<QRect> geometries;
     for (QPushButton* button : buttons) {
         geometries.append(button->geometry());
