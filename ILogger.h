@@ -16,7 +16,7 @@ public:
 
 class FileLogger : public ILogger {
 private:
-    std::string filename = "C:/programming_tech/test/log.txt";
+    std::string filename = ":/log.txt";
 public:
     int CountLinesInFile(const std::string& filename);
     void ClearFile(const std::string& filename);
