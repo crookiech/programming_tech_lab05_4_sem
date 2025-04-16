@@ -1,6 +1,7 @@
 #include "RateYourMindPalWindow.h"
 #include "ui_RateYourMindPalWindow.h"
 #include "Menu.h"
+#include "MenuOK.h"
 #include <QDialog>
 #include <QVBoxLayout>
 #include <QLabel>
@@ -177,7 +178,10 @@ void RateYourMindPalWindow::on_pushButton_trick_clicked() {
 void RateYourMindPalWindow::on_pushButton_exit_clicked()
 {
     hide();
+
+    // MenuOK menu;
     Menu menu;
+
     menu.setModal(true);
     menu.exec();
 }

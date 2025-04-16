@@ -1,6 +1,6 @@
 #include "CreateTagGame.h"
-#include "C:/programming_tech/lab04/log/ILogger.h"
-#include "C:/programming_tech/lab04/log/CreateLogger.h"
+#include "ILogger.h"
+#include "CreateLogger.h"
 #include <iostream>
 
 void CreateTagGame::info() {

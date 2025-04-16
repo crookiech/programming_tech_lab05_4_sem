@@ -16,7 +16,6 @@ public:
     ~ScreenSaver();
 
 private slots:
-    // void on_pushButton_tagGame_clicked();
     void on_lineEdit_editingFinished();
 
 public slots:

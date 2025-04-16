@@ -1,8 +1,8 @@
 #ifndef TAGGAME_H
 #define TAGGAME_H
 
-#include "C:/programming_tech/lab04/log/ILogger.h"
-#include "C:/programming_tech/lab04/log/CreateLogger.h"
+#include "ILogger.h"
+#include "CreateLogger.h"
 #include <string>
 
 class TagGame {

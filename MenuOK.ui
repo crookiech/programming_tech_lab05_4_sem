@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Menu</class>
- <widget class="QDialog" name="Menu">
+ <class>MenuOK</class>
+ <widget class="QDialog" name="MenuOK">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,14 +10,8 @@
     <height>470</height>
    </rect>
   </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
   <property name="windowTitle">
-   <string>Menu</string>
+   <string>Dialog</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #fcf276;</string>
@@ -52,7 +46,7 @@ color: #3d3e3f;</string>
              </size>
             </property>
             <property name="text">
-             <string>Введите вид игры:</string>
+             <string>Выберите вид игры:</string>
             </property>
            </widget>
           </item>
@@ -79,7 +73,7 @@ color: #3d3e3f;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-	font: 700 10pt &quot;Segoe UI&quot;;
+  font: 700 10pt &quot;Segoe UI&quot;;
   background-color: #3d3e3f; 
   border: 1px solid gray;
   color: white;
@@ -98,7 +92,14 @@ QPushButton:pressed {
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QComboBox" name="classes">
+            <property name="styleSheet">
+             <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+background-color: #3d3e3f; 
+border: 1px solid gray;
+color: white;</string>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="verticalSpacer_2">
@@ -140,17 +141,6 @@ QPushButton:pressed {
          </layout>
         </item>
        </layout>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="styleSheet">
-         <string notr="true">font: 750 9pt &quot;Segoe UI&quot;;
-color: rgba(61, 62, 63, 0.75);</string>
-        </property>
-        <property name="text">
-         <string>Доступные виды: классические пятнашки, rate your mind pal</string>
-        </property>
-       </widget>
       </item>
      </layout>
     </widget>

@@ -12,8 +12,10 @@ CONFIG += c++17
 SOURCES += \
     ClassicTagGameWindow.cpp \
     Menu.cpp \
+    MenuOK.cpp \
     RateYourMindPalWindow.cpp \
     ScreenSaver.cpp \
+    ScreenSaverOK.cpp \
     TagGame.cpp \
     CreateTagGame.cpp \
     ILogger.cpp \
@@ -25,8 +27,10 @@ SOURCES += \
 HEADERS += \
     ClassicTagGameWindow.h \
     Menu.h \
+    MenuOK.h \
     RateYourMindPalWindow.h \
     ScreenSaver.h \
+    ScreenSaverOK.h \
     TagGame.h \
     CreateTagGame.h \
     ILogger.h \
@@ -35,8 +39,10 @@ HEADERS += \
 FORMS += \
     ClassicTagGameWindow.ui \
     Menu.ui \
+    MenuOK.ui \
     RateYourMindPalWindow.ui \
-    ScreenSaver.ui
+    ScreenSaver.ui \
+    ScreenSaverOK.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

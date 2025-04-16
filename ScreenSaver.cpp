@@ -4,6 +4,8 @@
 #include "Menu.h"
 #include <QMessageBox>
 #include <iostream>
+#include <QStatusBar>
+#include <QLabel>
 
 ScreenSaver::ScreenSaver(QWidget *parent):
     QMainWindow(parent),
@@ -16,17 +18,6 @@ ScreenSaver::~ScreenSaver()
 {
     delete ui;
 }
-
-/*
-void ScreenSaver::on_pushButton_tagGame_clicked()
-{
-    hide();
-    Menu menu(this);
-    menu.setModal(true);
-    menu.exec();
-    show();
-}
-*/
 
 bool ScreenSaver::isValidGameName(QString gameName) {
     gameName = gameName.toLower();
